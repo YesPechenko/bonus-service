@@ -4,17 +4,12 @@ public class Main {
 
     long amount = 1000_60;
     boolean registered = true;
-
-    //задаем ожидаемое значение
     long expected = 30;
 
-    //вызываем целевой метод
     long actual = service.calculate(amount, registered);
 
-    //производим проверку (сравниваем ожидаемый и фактический):
     boolean passed = expected == actual;
 
-    // выводим результат
     System.out.println(passed);
   }
 }
